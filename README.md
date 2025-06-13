@@ -1,57 +1,75 @@
-# Australian Rainfall Prediction | Machine Learning Project
+# Australian Weather Data Analysis 🌤️
 
-![Python](https://img.shields.io/badge/Python-3.8%2B-3776AB?logo=python&logoColor=white)
-![Scikit-learn](https://img.shields.io/badge/Scikit--learn-1.2.2-F7931E?logo=scikit-learn)
-![Pandas](https://img.shields.io/badge/Pandas-1.5.3-150458?logo=pandas)
-![Jupyter](https://img.shields.io/badge/Jupyter-F37626?logo=Jupyter&logoColor=white)
-![License](https://img.shields.io/badge/License-MIT-blue)
+This project presents a comprehensive analysis of historical weather data across various regions in Australia. The objective is to derive meaningful insights from meteorological variables and identify patterns related to temperature, rainfall, humidity, and other climatic factors.
 
-## Table of Contents
-1. [Project Overview](#-project-overview)
-2. [Dataset Characteristics](#-dataset-characteristics)
-3. [Technical Implementation](#-technical-implementation)
-4. [Installation & Execution](#-installation--execution)
-5. [Results](#-results)
-6. [Contributing](#-contributing)
-7. [License](#-license)
-8. [Contact](#-contact)
+The analysis is conducted using Python and industry-standard data science libraries, with a focus on data cleaning, exploratory data analysis (EDA), and visual storytelling.
 
-## 📌 Project Overview
-This end-to-end machine learning solution predicts rainfall in Australian regions using historical weather data from 2008-2017. The project demonstrates a complete data science workflow from exploratory analysis to production-ready model development.
+---
 
-Key Features:
-- Comprehensive data preprocessing pipeline
-- Advanced feature engineering techniques
-- Multiple model comparison and evaluation
-- Detailed performance metrics and visualizations
+## 🧭 Objectives
 
-## 📂 Dataset Characteristics
-**Source:** [Australian Bureau of Meteorology](http://www.bom.gov.au/climate/dwo/)
+- Explore and understand key weather trends in Australia.
+- Perform data cleaning and preprocessing to handle missing and anomalous values.
+- Visualize distributions, correlations, and seasonal behavior of weather variables.
+- Identify potential predictors for future weather conditions (e.g., rainfall).
+- Establish a foundation for future predictive modeling or forecasting efforts.
 
-**Dataset Details:**
-| Feature | Description |
-|---------|-------------|
-| Time Period | 2008-2017 |
-| Observations | 145,460 daily records |
-| Features | 23 meteorological parameters |
-| Target Variable | `RainTomorrow` (Binary) |
-| Geographic Coverage | 49 weather stations |
+---
 
-**Key Features:**
-- Temperature metrics (MinTemp, MaxTemp, Temp9am, Temp3pm)
-- Humidity measurements
-- Pressure readings
-- Wind speed and direction
-- Cloud cover observations
+## 📂 Project Structure
 
-## 🛠 Technical Implementation
+📦 Australian Weather Data Analysis
+├── FinalProject_AUSWeather.ipynb # Main Jupyter notebook with all analyses
+├── data/
+│ └── weatherAUS.csv # (Assumed) primary dataset
+├── images/ # Exported plots and visualizations
+├── README.md # Project documentation
+└── requirements.txt # Python dependencies
 
-### Data Pipeline Architecture
-```mermaid
-graph LR
-    A[Raw CSV Data] --> B[Data Cleaning]
-    B --> C[Exploratory Analysis]
-    C --> D[Feature Engineering]
-    D --> E[Model Training]
-    E --> F[Hyperparameter Tuning]
-    F --> G[Performance Evaluation]
+---
+
+## 🛠️ Technologies Used
+
+- **Programming Language**: Python 3.x
+- **Libraries & Tools**:
+  - `pandas`, `numpy` – Data manipulation
+  - `matplotlib`, `seaborn`, `plotly` – Data visualization
+  - `scikit-learn` – Feature analysis and modeling foundations
+  - `Jupyter Notebook` – Interactive analysis and presentation
+
+---
+
+## 📊 Data Summary
+
+The dataset contains daily weather observations from multiple Australian locations and includes features such as:
+
+- `Date`, `Location`
+- `MinTemp`, `MaxTemp`
+- `Rainfall`, `RainToday`, `RainTomorrow`
+- `Humidity9am`, `Humidity3pm`
+- `WindGustSpeed`, `WindSpeed9am`, `WindSpeed3pm`
+- `Pressure9am`, `Pressure3pm`
+- `Cloud9am`, `Cloud3pm`
+- `Temp9am`, `Temp3pm`
+
+The target variable for potential classification tasks is **`RainTomorrow`**, indicating whether or not it will rain the next day.
+
+---
+
+## 📈 Key Insights
+
+- Visualized rainfall and temperature distributions across various cities and seasons.
+- Conducted correlation analysis to uncover relationships between humidity, pressure, and rainfall.
+- Identified regional weather patterns that could inform local forecasting efforts.
+- Handled significant missing data using imputation and filtering techniques.
+
+---
+
+## 🚀 Getting Started
+
+### Prerequisites
+
+Install required libraries using:
+
+```bash
+pip install -r requirements.txt
