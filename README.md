@@ -74,23 +74,6 @@ Install required libraries using:
 ```bash
 pip install -r requirements.txt
 
-Or manually:
-pip install pandas numpy matplotlib seaborn scikit-learn
-Running the Project
-Clone the repository:
-
-bash
-Copy
-Edit
-git clone https://github.com/your-username/aus-weather-analysis.git
-cd aus-weather-analysis
-Open the notebook:
-
-bash
-Copy
-Edit
-jupyter notebook FinalProject_AUSWeather.ipynb
-Ensure the dataset file (weatherAUS.csv) is located in the data/ folder.
 
 🧠 Future Directions
 Integrate predictive models to forecast rainfall (classification with RainTomorrow).
@@ -100,21 +83,3 @@ Develop an interactive weather dashboard using Streamlit or Dash.
 Expand the analysis to include time-series forecasting models (e.g., ARIMA, LSTM).
 
 Perform clustering to group similar climate zones across Australia.
-
-📄 License
-This project is licensed under the MIT License. See the LICENSE file for more details.
-
-👤 Author
-Ziad Attia Elhafian
-Data Science | Machine Learning | Climate Analytics
-GitHub • LinkedIn • Email
-
-Disclaimer: This project is for educational and analytical purposes only and is not intended for operational forecasting or commercial use.
-
----
-
-Let me know if you'd like to:
-- Add a custom dataset link (e.g., from Kaggle).
-- Include a table of contents.
-- Export this as a downloadable `README.md` file.
-- Personalize the author section with your actual details.
