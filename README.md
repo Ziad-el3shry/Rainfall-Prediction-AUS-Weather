@@ -62,9 +62,3 @@ This project performs a comprehensive analysis of daily weather observations fro
 ```bash
 git clone https://github.com/Ziad-el3shry/Rainfall-Prediction-AUS-Weather.git
 cd Rainfall-Prediction-AUS-Weather
-
----
-
-## 👤 Author
-Ziad Attia
-Final Project for ML Specialization (Coursera x IBM)
