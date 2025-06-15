@@ -1,18 +1,15 @@
-# Australian Weather Data Analysis 🌤️
+# Australian Weather Data Analysis 🌦️
 
-This project presents a comprehensive analysis of historical weather data across various regions in Australia. The objective is to derive meaningful insights from meteorological variables and identify patterns related to temperature, rainfall, humidity, and other climatic factors.
-
-The analysis is conducted using Python and industry-standard data science libraries, with a focus on data cleaning, exploratory data analysis (EDA), and visual storytelling.
+This project was developed as the **final capstone project** for the _"Machine Learning Specialization (Version 2)"_ offered by **Coursera in collaboration with IBM**. It focuses on performing end-to-end exploratory data analysis of Australian weather data to derive insights, identify patterns, and lay the groundwork for predictive modeling.
 
 ---
 
-## 🧭 Objectives
+## 🎓 Course Information
 
-- Explore and understand key weather trends in Australia.
-- Perform data cleaning and preprocessing to handle missing and anomalous values.
-- Visualize distributions, correlations, and seasonal behavior of weather variables.
-- Identify potential predictors for future weather conditions (e.g., rainfall).
-- Establish a foundation for future predictive modeling or forecasting efforts.
+- **Course**: Machine Learning V2 Specialization  
+- **Institution**: Coursera, in collaboration with IBM  
+- **Project Type**: Final Capstone Project  
+- **Focus Areas**: Data preprocessing, EDA, feature correlation, weather trends
 
 ---
 
@@ -21,65 +18,53 @@ The analysis is conducted using Python and industry-standard data science librar
 📦 Australian Weather Data Analysis
 ├── FinalProject_AUSWeather.ipynb # Main Jupyter notebook with all analyses
 ├── data/
-│ └── weatherAUS.csv # (Assumed) primary dataset
+│ └── weatherAUS.csv # Primary dataset (assumed location)
 ├── images/ # Exported plots and visualizations
 ├── README.md # Project documentation
 └── requirements.txt # Python dependencies
 
 ---
 
-## 🛠️ Technologies Used
+## 📊 Overview
 
-- **Programming Language**: Python 3.x
-- **Libraries & Tools**:
-  - `pandas`, `numpy` – Data manipulation
-  - `matplotlib`, `seaborn`, `plotly` – Data visualization
-  - `scikit-learn` – Feature analysis and modeling foundations
-  - `Jupyter Notebook` – Interactive analysis and presentation
+This project performs a comprehensive analysis of daily weather observations from across Australia. It aims to uncover seasonal, regional, and climatic patterns through visualizations and statistical summaries.
 
----
-
-## 📊 Data Summary
-
-The dataset contains daily weather observations from multiple Australian locations and includes features such as:
-
-- `Date`, `Location`
-- `MinTemp`, `MaxTemp`
-- `Rainfall`, `RainToday`, `RainTomorrow`
-- `Humidity9am`, `Humidity3pm`
-- `WindGustSpeed`, `WindSpeed9am`, `WindSpeed3pm`
-- `Pressure9am`, `Pressure3pm`
-- `Cloud9am`, `Cloud3pm`
-- `Temp9am`, `Temp3pm`
-
-The target variable for potential classification tasks is **`RainTomorrow`**, indicating whether or not it will rain the next day.
+### Objectives:
+- Clean and preprocess the raw dataset
+- Visualize distributions, correlations, and trends
+- Analyze rainfall, temperature, pressure, and humidity
+- Support future predictive tasks (e.g., rainfall forecasting)
 
 ---
 
-## 📈 Key Insights
+## 🔧 Technologies Used
 
-- Visualized rainfall and temperature distributions across various cities and seasons.
-- Conducted correlation analysis to uncover relationships between humidity, pressure, and rainfall.
-- Identified regional weather patterns that could inform local forecasting efforts.
-- Handled significant missing data using imputation and filtering techniques.
+- Python 3.x
+- Jupyter Notebook
+- Pandas, NumPy
+- Matplotlib, Seaborn, Plotly
+- Scikit-learn (for basic modeling and feature prep)
 
 ---
 
-## 🚀 Getting Started
+## 📈 Key Results
 
-### Prerequisites
+- Identified strong correlations between humidity, pressure, and rainfall
+- Explored trends across different cities and seasons
+- Created visual summaries (heatmaps, box plots, time series)
+- Preprocessed missing values using conditional filtering and imputation
 
-Install required libraries using:
+---
 
+## 📥 Getting Started
+
+### 1. Clone the repository
 ```bash
-pip install -r requirements.txt
+git clone https://github.com/Ziad-el3shry/Rainfall-Prediction-AUS-Weather.git
+cd Rainfall-Prediction-AUS-Weather
 
+---
 
-🧠 Future Directions
-Integrate predictive models to forecast rainfall (classification with RainTomorrow).
-
-Develop an interactive weather dashboard using Streamlit or Dash.
-
-Expand the analysis to include time-series forecasting models (e.g., ARIMA, LSTM).
-
-Perform clustering to group similar climate zones across Australia.
+👤 Author
+Ziad Attia
+Final Project for ML Specialization (Coursera x IBM)
