@@ -65,6 +65,6 @@ cd Rainfall-Prediction-AUS-Weather
 
 ---
 
-👤 Author
+## 👤 Author
 Ziad Attia
 Final Project for ML Specialization (Coursera x IBM)
